@@ -2,6 +2,8 @@
 
 Configurable isometric frontend concept
 
+![preview](./preview.png)
+
 ## Usage
 
 You need to have node.js and npm. First you need to install the dependencies and then run it locally or build it.
