@@ -11,10 +11,15 @@ import { ArrowConnection } from './ArrowConnection';
 
 import { connections } from './connections';
 import sections from "@/components/data";
+import { useSectionStore } from "@/store/sectionsStore";
 
 export const Scene = () => {
-    const [hoverSectionIndex, setHoverSectionIndex] = useState(Infinity);
-    const [activeSectionIndex, setActiveSectionIndex] = useState(Infinity);
+    const {
+        activeSectionIndex,
+        // hoverSectionIndex,
+        // setActiveSectionIndex,
+        // setHoverSectionIndex,
+    } = useSectionStore();
 
     const modelLookup = useMemo(() => {
         const map = new Map<string, THREE.Vector3>();
@@ -23,7 +28,7 @@ export const Scene = () => {
                 const pos = new THREE.Vector3(
                     -40 + model.position[0],
                     model.size[1] / 2,
-                    20  + model.position[2]
+                    20 + model.position[2]
                 );
                 map.set(model.name, pos);
             });
@@ -35,15 +40,11 @@ export const Scene = () => {
         <group>
             <Pyramid
                 sections={sections}
-                hoverSectionIndex={hoverSectionIndex}
-                setHoverSectionIndex={setHoverSectionIndex}
-                activeSectionIndex={activeSectionIndex}
-                setActiveSectionIndex={setActiveSectionIndex}
             />
             <Ground />
             <CameraController
                 targetPosition={
-                    activeSectionIndex != Infinity && activeSectionIndex < sections.length
+                    activeSectionIndex !== Infinity && activeSectionIndex < sections.length
                         ? { x: -15, y: 15 }
                         : { x: 10, y: 10 }
                 }
@@ -51,16 +52,13 @@ export const Scene = () => {
             {sections.map((section, index) => (
                 <Section
                     key={`section-model-${section.name}-${index}`}
-                    setActiveSectionIndex={setActiveSectionIndex}
                     section={section}
                     index={index}
-                    activeSectionIndex={activeSectionIndex}
                 />
             ))}
 
             {activeSectionIndex !== Infinity &&
                 connections.map((conn, i) => {
-
                     const from = modelLookup.get(conn.from);
                     const to = modelLookup.get(conn.to);
                     const isFromActive = conn.section === sections[activeSectionIndex]?.name;
@@ -86,64 +84,51 @@ export const Scene = () => {
 };
 
 interface CameraControllerProps {
-    targetPosition: {x: number, y: number};
+    targetPosition: { x: number, y: number };
 }
 
-const CameraController: React.FC<CameraControllerProps> = (props) => {
-
+const CameraController: React.FC<CameraControllerProps> = ({ targetPosition }) => {
     const { controls } = useThree() as unknown as { controls: MapControls };
 
     useEffect(() => {
         if (!controls) return;
-        console.log("moving to new target position");
+
         const currentOffset = new THREE.Vector3().subVectors(
             controls.object.position,
             controls.target
         );
 
-        const newTarget = new THREE.Vector3(
-            props.targetPosition.x,
-            10, // The default camera elevation
-            props.targetPosition.y
-        ).clone();
+        const newTarget = new THREE.Vector3(targetPosition.x, 10, targetPosition.y);
         const newCamPos = newTarget.clone().add(currentOffset);
 
         gsap.to(controls.target, {
-            x: newTarget.x,
-            y: newTarget.y,
-            z: newTarget.z,
+            ...newTarget,
             duration: 1,
-            onUpdate: () => {controls.update()},
+            onUpdate: () => { controls.update() },
         });
 
         gsap.to(controls.object.position, {
-            x: newCamPos.x,
-            y: newCamPos.y,
-            z: newCamPos.z,
+            ...newCamPos,
             duration: 1,
-            onUpdate: () => {controls.update()},
+            onUpdate: () => { controls.update() },
         });
-    }, [props.targetPosition]);
+    }, [targetPosition]);
 
     return null;
-}
+};
 
-interface PyrmidProps {
+interface PyramidProps {
     sections: SectionDetails[];
-    hoverSectionIndex: number;
-    setHoverSectionIndex: (index: number) => void;
-    setActiveSectionIndex: (index: number) => void;
-    activeSectionIndex: number;
 }
 
-const Pyramid : React.FC<PyrmidProps> = ({ 
-    sections,
-    setActiveSectionIndex,
-    hoverSectionIndex,
-    setHoverSectionIndex
-}) => {
+const Pyramid: React.FC<PyramidProps> = ({ sections }) => {
+    const {
+        setActiveSectionIndex,
+        setHoverSectionIndex,
+        hoverSectionIndex,
+    } = useSectionStore();
 
-    let initialBottomWidth = 2;
+    const initialBottomWidth = 2;
     const heightPerLayer = 1;
     const groupRef = useRef<THREE.Group>(null);
 
@@ -152,90 +137,77 @@ const Pyramid : React.FC<PyrmidProps> = ({
 
         groupRef.current.traverse((child) => {
             if (child.name && child instanceof THREE.Mesh) {
+                const originalY = child.userData.index * heightPerLayer;
 
-                const originalPositionY = child.userData.index * heightPerLayer;
-
-                if (child.userData.index >= hoverSectionIndex &&
-                    hoverSectionIndex != Infinity) {
-                    gsap.to(child.position, { y: originalPositionY + heightPerLayer*2 });
-                    gsap.to(child.rotation, { y: Math.PI/2 });
-                }
-                else if (child.userData.index <= hoverSectionIndex &&
-                    hoverSectionIndex != Infinity) {
-                    console.log(child.userData.index);
-                    gsap.to(child.position, { y: originalPositionY });
-                    gsap.to(child.rotation, { y: -Math.PI/2 });
-                } 
-                else {
-                    gsap.to(child.position, { y: originalPositionY });
+                if (child.userData.index >= hoverSectionIndex && hoverSectionIndex !== Infinity) {
+                    gsap.to(child.position, { y: originalY + heightPerLayer * 2 });
+                    gsap.to(child.rotation, { y: Math.PI / 2 });
+                } else if (child.userData.index <= hoverSectionIndex && hoverSectionIndex !== Infinity) {
+                    gsap.to(child.position, { y: originalY });
+                    gsap.to(child.rotation, { y: -Math.PI / 2 });
+                } else {
+                    gsap.to(child.position, { y: originalY });
                     gsap.to(child.rotation, { y: 0 });
                 }
             }
         });
-
     }, [hoverSectionIndex]);
-
 
     return (
         <group ref={groupRef}>
-            {
-                sections.map((section, index) => {
+            {sections.map((section, index) => {
+                const geometry = useMemo(() => {
+                    const bottomWidth = initialBottomWidth - (index * initialBottomWidth / sections.length);
+                    const topWidth = initialBottomWidth - ((index + 1) * initialBottomWidth / sections.length);
+                    return new THREE.CylinderGeometry(topWidth, bottomWidth, heightPerLayer, 4, 1);
+                }, []);
 
-                    const geometry = useMemo(() => {
-                        const bottomWidth = initialBottomWidth - (index * initialBottomWidth / sections.length);
-                        const topWidth = initialBottomWidth - ((index + 1) * initialBottomWidth / sections.length);
-                        return new THREE.CylinderGeometry(topWidth, bottomWidth, heightPerLayer, 4, 1);
-                    }, []);
-
-                    return (
-                        <group 
-                            key={`pyramid-${section.name}-${index}`} 
-                            position={[2.5, heightPerLayer/2, 2.5]}
-                            rotation={[0, 45*Math.PI/180, 0]}
+                return (
+                    <group
+                        key={`pyramid-${section.name}-${index}`}
+                        position={[2.5, heightPerLayer / 2, 2.5]}
+                        rotation={[0, Math.PI / 4, 0]}
+                    >
+                        <mesh
+                            position={[0, index * heightPerLayer, 0]}
+                            onPointerOver={(e) => {
+                                e.stopPropagation();
+                                setHoverSectionIndex(index);
+                            }}
+                            onClick={() => setActiveSectionIndex(index)}
+                            onPointerLeave={() => setHoverSectionIndex(Infinity)}
+                            geometry={geometry}
+                            visible={false}
+                        />
+                        <mesh
+                            name={section.name}
+                            position={[0, index * heightPerLayer, 0]}
+                            userData={{ index }}
+                            geometry={geometry}
                         >
-                            <mesh 
-                                position={[0, index*heightPerLayer, 0]}
-                                onPointerOver={(e) => {
-                                    e.stopPropagation();
-                                    setHoverSectionIndex(index)}
-                                }
-                                onClick={() => setActiveSectionIndex(index)}
-                                onPointerLeave={() => setHoverSectionIndex(Infinity)}
-                                geometry={geometry}
-                                visible={false}
+                            <MeshTransmissionMaterial
+                                reflectivity={0.0}
+                                transmission={0.7}
+                                thickness={0.3}
+                                flatShading
+                                color="#87CEFA"
                             />
-                            <mesh 
-                                name={section.name}
-                                key={`pyramid-${section.name}-${index}`} 
-                                position={[0, index*heightPerLayer, 0]}
-                                userData={{ index: index }}
-                                geometry={geometry}
-                            >
-                                <MeshTransmissionMaterial reflectivity={0.0} transmission={0.7} thickness={0.3} flatShading color="#87CEFA"/>
-                            </mesh>
-                            <Icon src={section.icon} y={index*heightPerLayer}/>
-                        </group>
-                    )
-                })
-            }
+                        </mesh>
+                        <Icon src={section.icon} y={index * heightPerLayer} />
+                    </group>
+                );
+            })}
         </group>
     );
-}
-
+};
 
 interface SectionProps {
-    setActiveSectionIndex: (index: number) => void;
     section: SectionDetails;
     index: number;
-    activeSectionIndex: number;
 }
 
-const Section: React.FC<SectionProps> = ({
-    setActiveSectionIndex,
-    section,
-    index,
-    activeSectionIndex
-}) => {
+const Section: React.FC<SectionProps> = ({ section, index }) => {
+    const { activeSectionIndex, setActiveSectionIndex } = useSectionStore();
     const isActive = index === activeSectionIndex;
 
     const [shouldRender, setShouldRender] = useState(isActive);
@@ -246,10 +218,9 @@ const Section: React.FC<SectionProps> = ({
         if (isActive) {
             setShouldRender(true);
         } else {
-            // Delay unmounting
             timeout = setTimeout(() => {
                 setShouldRender(false);
-            }, 500); // 500ms delay
+            }, 500);
         }
 
         return () => clearTimeout(timeout);
@@ -277,51 +248,46 @@ const Section: React.FC<SectionProps> = ({
         </group>
     );
 };
-const SectionModel = ({ model } : { model : ModelShape }) => {
 
-    return (
-        <group>
-            <mesh
-                position={[model.position[0], model.size[1]/2, model.position[2]]} 
-                scale={model.size}
-                rotation={[0, model.shape == "cone" ? Math.PI/180 * 45 : 0, 0]}
-                castShadow
-                receiveShadow
-            >
-                {
-                    model.shape === "box" ?
-                        <boxGeometry args={[1, 1, 1]} />
-                        : model.shape === "cone" ?
-                            <coneGeometry args={[1, 1, 4]}/>
-                            : model.shape == "cylinder" ?
-                                <cylinderGeometry /> : null
-                }
-                <meshStandardMaterial color={model.color ?? "hotpink"} />
-            </mesh>
-            <Text 
-                rotation={[-Math.PI/2, 0, 0]}
-                position={[
-                    model.position[0] + (model.shape == "box" ? model.size[0] : model.size[0]*2),
-                    0.01,
-                    model.position[2] + (model.shape == "box" ? model.size[2] : model.size[2]*2),
-                ]} 
-                fontSize={0.7}
-                color="white"
-            >
-                {model.name}
-            </Text>
-        </group>
-    );
-}
+const SectionModel = ({ model }: { model: ModelShape }) => (
+    <group>
+        <mesh
+            position={[model.position[0], model.size[1] / 2, model.position[2]]}
+            scale={model.size}
+            rotation={[0, model.shape === "cone" ? Math.PI / 4 : 0, 0]}
+            castShadow
+            receiveShadow
+        >
+            {model.shape === "box" ? (
+                <boxGeometry args={[1, 1, 1]} />
+            ) : model.shape === "cone" ? (
+                <coneGeometry args={[1, 1, 4]} />
+            ) : model.shape === "cylinder" ? (
+                <cylinderGeometry />
+            ) : null}
+            <meshStandardMaterial color={model.color ?? "hotpink"} />
+        </mesh>
+        <Text
+            rotation={[-Math.PI / 2, 0, 0]}
+            position={[
+                model.position[0] + (model.shape === "box" ? model.size[0] : model.size[0] * 2),
+                0.01,
+                model.position[2] + (model.shape === "box" ? model.size[2] : model.size[2] * 2),
+            ]}
+            fontSize={0.7}
+            color="white"
+        >
+            {model.name}
+        </Text>
+    </group>
+);
 
-const Ground = () => {
-    return (
-        <>
-            <mesh rotation={[-Math.PI/2, 0, 0]} receiveShadow position={[0, -0.01, 0]}>
-                <planeGeometry args={[100, 100, 1, 1]}/>
-                <meshStandardMaterial color="black" />
-            </mesh>
-            <Grid infiniteGrid position={[-10, 0, 0]} receiveShadow/>
-        </>
-    );
-}
+const Ground = () => (
+    <>
+        <mesh rotation={[-Math.PI / 2, 0, 0]} receiveShadow position={[0, -0.01, 0]}>
+            <planeGeometry args={[100, 100, 1, 1]} />
+            <meshStandardMaterial color="black" />
+        </mesh>
+        <Grid infiniteGrid position={[-10, 0, 0]} receiveShadow />
+    </>
+);

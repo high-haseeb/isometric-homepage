@@ -1,4 +1,5 @@
 import { Experience } from "@/components/Experience";
+import { Overlay } from "@/components/Overlay";
 
 export default function Home() {
 
@@ -7,6 +8,7 @@ export default function Home() {
             <div className="w-full h-full">
                 <Experience />
             </div>
+            <Overlay/>
         </div>
     );
 }
