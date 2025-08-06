@@ -174,7 +174,7 @@ const Pyramid: React.FC<PyramidProps> = ({ sections }) => {
                                 e.stopPropagation();
                                 setHoverSectionIndex(index);
                             }}
-                            onClick={() => setActiveSectionIndex(index)}
+                            onClick={() => setActiveSectionIndex(hoverSectionIndex)}
                             onPointerLeave={() => setHoverSectionIndex(Infinity)}
                             geometry={geometry}
                             visible={false}

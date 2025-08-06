@@ -40,7 +40,7 @@ export const Overlay = () => {
         >
             {section && (
                 <>
-                    <div className="text-5xl" style={{ color: section.primaryColor }}>
+                    <div className="text-5xl" style={{ color: "white" }}>
                         {section.name}
                     </div>
                     <div className="text-lg mt-2 max-w-md text-white font-normal">
