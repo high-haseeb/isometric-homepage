@@ -210,7 +210,7 @@ const Section: React.FC<SectionProps> = ({ section, index }) => {
     const { activeSectionIndex, setActiveSectionIndex } = useSectionStore();
     const isActive = index === activeSectionIndex;
 
-    const [shouldRender, setShouldRender] = useState(isActive);
+    const [shouldRender, setShouldRender] = useState(true);
 
     useEffect(() => {
         let timeout: NodeJS.Timeout;
