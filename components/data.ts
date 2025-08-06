@@ -101,5 +101,5 @@ const sections: SectionDetails[] = [
         targetPosition: { x: 30, y: -10 },
         models: generateModels("Infra", 12, "#1A535C", -20, -20),
     },
-];
+].reverse();
 export default sections;
