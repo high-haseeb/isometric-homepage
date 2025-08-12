@@ -1,0 +1,859 @@
+{
+    "sections": [
+        {
+            "name": "Infrastructure",
+            "description": "Physical and virtual IT infrastructure",
+            "primaryColor": "#1A535C",
+            "icon": "/icons/group.svg",
+            "targetPosition": {
+                "x": 30,
+                "y": -10
+            },
+            "models": [
+                {
+                    "shape": "box",
+                    "size": [ 2.41, 2.44, 1.8 ],
+                    "position": [ -20, 0, -20 ],
+                    "name": "Infra-1",
+                    "color": "#1A535C"
+                },
+                {
+                    "shape": "box",
+                    "size": [ 2.42, 1.69, 2.01 ],
+                    "position": [ -13, 0, -20 ],
+                    "name": "Infra-2",
+                    "color": "#FFD166"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        2.3,
+                        1.7,
+                        2.17
+                    ],
+                    "position": [
+                        -6,
+                        0,
+                        -20
+                    ],
+                    "name": "Infra-3",
+                    "color": "#06D6A0"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        2.34,
+                        1.89,
+                        2.47
+                    ],
+                    "position": [
+                        1,
+                        0,
+                        -20
+                    ],
+                    "name": "Infra-4",
+                    "color": "#EF476F"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        2.1,
+                        1.93,
+                        2.1
+                    ],
+                    "position": [
+                        -20,
+                        0,
+                        -13
+                    ],
+                    "name": "Infra-5",
+                    "color": "#118AB2"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        1.98,
+                        2.07,
+                        2.02
+                    ],
+                    "position": [
+                        -13,
+                        0,
+                        -13
+                    ],
+                    "name": "Infra-6",
+                    "color": "#8338EC"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        2.48,
+                        1.65,
+                        2.11
+                    ],
+                    "position": [
+                        -6,
+                        0,
+                        -13
+                    ],
+                    "name": "Infra-7",
+                    "color": "#FF006E"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        1.94,
+                        2.08,
+                        1.61
+                    ],
+                    "position": [
+                        1,
+                        0,
+                        -13
+                    ],
+                    "name": "Infra-8",
+                    "color": "#3A86FF"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        2.3,
+                        1.58,
+                        1.65
+                    ],
+                    "position": [
+                        -20,
+                        0,
+                        -6
+                    ],
+                    "name": "Infra-9",
+                    "color": "#FB5607"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        2.34,
+                        1.76,
+                        2.07
+                    ],
+                    "position": [
+                        -13,
+                        0,
+                        -6
+                    ],
+                    "name": "Infra-10",
+                    "color": "#FFBE0B"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        1.71,
+                        1.84,
+                        2.5
+                    ],
+                    "position": [
+                        -6,
+                        0,
+                        -6
+                    ],
+                    "name": "Infra-11",
+                    "color": "#00F5D4"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        2.2,
+                        1.68,
+                        1.99
+                    ],
+                    "position": [
+                        1,
+                        0,
+                        -6
+                    ],
+                    "name": "Infra-12",
+                    "color": "#1A535C"
+                }
+            ]
+        },
+        {
+            "name": "Data",
+            "description": "Data storage, processing and pipelines",
+            "primaryColor": "#6A4C93",
+            "icon": "/icons/package.svg",
+            "targetPosition": {
+                "x": 20,
+                "y": -40
+            },
+            "models": [
+                {
+                    "shape": "box",
+                    "size": [
+                        2.45,
+                        2.01,
+                        1.98
+                    ],
+                    "position": [
+                        -20,
+                        0,
+                        -20
+                    ],
+                    "name": "Data-1",
+                    "color": "#6A4C93"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        2.01,
+                        1.6,
+                        2.19
+                    ],
+                    "position": [
+                        -13,
+                        0,
+                        -20
+                    ],
+                    "name": "Data-2",
+                    "color": "#FFD166"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        1.9,
+                        2.27,
+                        2.22
+                    ],
+                    "position": [
+                        -6,
+                        0,
+                        -20
+                    ],
+                    "name": "Data-3",
+                    "color": "#06D6A0"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        1.98,
+                        1.9,
+                        2.04
+                    ],
+                    "position": [
+                        1,
+                        0,
+                        -20
+                    ],
+                    "name": "Data-4",
+                    "color": "#EF476F"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        2.47,
+                        2.39,
+                        1.61
+                    ],
+                    "position": [
+                        -20,
+                        0,
+                        -13
+                    ],
+                    "name": "Data-5",
+                    "color": "#118AB2"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        2.34,
+                        1.8,
+                        1.64
+                    ],
+                    "position": [
+                        -13,
+                        0,
+                        -13
+                    ],
+                    "name": "Data-6",
+                    "color": "#8338EC"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        1.98,
+                        2.25,
+                        2.43
+                    ],
+                    "position": [
+                        -6,
+                        0,
+                        -13
+                    ],
+                    "name": "Data-7",
+                    "color": "#FF006E"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        2.42,
+                        1.87,
+                        1.76
+                    ],
+                    "position": [
+                        1,
+                        0,
+                        -13
+                    ],
+                    "name": "Data-8",
+                    "color": "#3A86FF"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        2.26,
+                        1.6,
+                        1.52
+                    ],
+                    "position": [
+                        -20,
+                        0,
+                        -6
+                    ],
+                    "name": "Data-9",
+                    "color": "#FB5607"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        1.67,
+                        1.72,
+                        1.84
+                    ],
+                    "position": [
+                        -13,
+                        0,
+                        -6
+                    ],
+                    "name": "Data-10",
+                    "color": "#FFBE0B"
+                }
+            ]
+        },
+        {
+            "name": "Integration",
+            "description": "Connectivity and middleware components",
+            "primaryColor": "#FFA500",
+            "icon": "/icons/gear.svg",
+            "targetPosition": {
+                "x": -40,
+                "y": -40
+            },
+            "models": [
+                {
+                    "shape": "box",
+                    "size": [
+                        1.86,
+                        1.74,
+                        1.56
+                    ],
+                    "position": [
+                        -20,
+                        0,
+                        -20
+                    ],
+                    "name": "App-1",
+                    "color": "#FFA500"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        2.27,
+                        2.41,
+                        2.18
+                    ],
+                    "position": [
+                        -13,
+                        0,
+                        -20
+                    ],
+                    "name": "App-2",
+                    "color": "#FFD166"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        1.55,
+                        2.49,
+                        1.54
+                    ],
+                    "position": [
+                        -6,
+                        0,
+                        -20
+                    ],
+                    "name": "App-3",
+                    "color": "#06D6A0"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        1.55,
+                        1.97,
+                        1.98
+                    ],
+                    "position": [
+                        1,
+                        0,
+                        -20
+                    ],
+                    "name": "App-4",
+                    "color": "#EF476F"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        2.37,
+                        1.67,
+                        2.03
+                    ],
+                    "position": [
+                        -20,
+                        0,
+                        -13
+                    ],
+                    "name": "App-5",
+                    "color": "#118AB2"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        2.14,
+                        1.61,
+                        2.09
+                    ],
+                    "position": [
+                        -13,
+                        0,
+                        -13
+                    ],
+                    "name": "App-6",
+                    "color": "#8338EC"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        1.89,
+                        1.62,
+                        1.78
+                    ],
+                    "position": [
+                        -6,
+                        0,
+                        -13
+                    ],
+                    "name": "App-7",
+                    "color": "#FF006E"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        2.33,
+                        1.64,
+                        2.22
+                    ],
+                    "position": [
+                        1,
+                        0,
+                        -13
+                    ],
+                    "name": "App-8",
+                    "color": "#3A86FF"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        1.82,
+                        2.4,
+                        2.47
+                    ],
+                    "position": [
+                        -20,
+                        0,
+                        -6
+                    ],
+                    "name": "App-9",
+                    "color": "#FB5607"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        2.23,
+                        2.13,
+                        1.71
+                    ],
+                    "position": [
+                        -13,
+                        0,
+                        -6
+                    ],
+                    "name": "App-10",
+                    "color": "#FFBE0B"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        1.98,
+                        2.27,
+                        2.24
+                    ],
+                    "position": [
+                        -6,
+                        0,
+                        -6
+                    ],
+                    "name": "App-11",
+                    "color": "#00F5D4"
+                }
+            ]
+        },
+        {
+            "name": "Application",
+            "description": "Core software systems and platforms",
+            "primaryColor": "#4ECDC4",
+            "icon": "/icons/package.svg",
+            "targetPosition": {
+                "x": 40,
+                "y": 40
+            },
+            "models": [
+                {
+                    "shape": "box",
+                    "size": [
+                        1.97,
+                        1.53,
+                        2.36
+                    ],
+                    "position": [
+                        -20,
+                        0,
+                        -20
+                    ],
+                    "name": "App--1",
+                    "color": "#4ECDC4"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        1.92,
+                        2.07,
+                        1.85
+                    ],
+                    "position": [
+                        -13,
+                        0,
+                        -20
+                    ],
+                    "name": "App--2",
+                    "color": "#FFD166"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        1.73,
+                        1.73,
+                        1.57
+                    ],
+                    "position": [
+                        -6,
+                        0,
+                        -20
+                    ],
+                    "name": "App--3",
+                    "color": "#06D6A0"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        2.19,
+                        1.58,
+                        2.29
+                    ],
+                    "position": [
+                        1,
+                        0,
+                        -20
+                    ],
+                    "name": "App--4",
+                    "color": "#EF476F"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        2.11,
+                        1.82,
+                        2.42
+                    ],
+                    "position": [
+                        -20,
+                        0,
+                        -13
+                    ],
+                    "name": "App--5",
+                    "color": "#118AB2"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        1.59,
+                        1.51,
+                        1.8
+                    ],
+                    "position": [
+                        -13,
+                        0,
+                        -13
+                    ],
+                    "name": "App--6",
+                    "color": "#8338EC"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        2.25,
+                        1.92,
+                        2.08
+                    ],
+                    "position": [
+                        -6,
+                        0,
+                        -13
+                    ],
+                    "name": "App--7",
+                    "color": "#FF006E"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        1.59,
+                        2,
+                        2.22
+                    ],
+                    "position": [
+                        1,
+                        0,
+                        -13
+                    ],
+                    "name": "App--8",
+                    "color": "#3A86FF"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        1.88,
+                        1.75,
+                        1.94
+                    ],
+                    "position": [
+                        -20,
+                        0,
+                        -6
+                    ],
+                    "name": "App--9",
+                    "color": "#FB5607"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        1.84,
+                        2.36,
+                        2.47
+                    ],
+                    "position": [
+                        -13,
+                        0,
+                        -6
+                    ],
+                    "name": "App--10",
+                    "color": "#FFBE0B"
+                }
+            ]
+        },
+        {
+            "name": "Business",
+            "description": "Business operations and strategic processes",
+            "primaryColor": "#FF6B6B",
+            "icon": "/icons/euro.svg",
+            "targetPosition": {
+                "x": -40,
+                "y": 40
+            },
+            "models": [
+                {
+                    "shape": "box",
+                    "size": [
+                        1.54,
+                        2.47,
+                        2.47
+                    ],
+                    "position": [
+                        -20,
+                        0,
+                        -20
+                    ],
+                    "name": "Business-1",
+                    "color": "#FFA500"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        1.63,
+                        2.39,
+                        2.29
+                    ],
+                    "position": [
+                        -13,
+                        0,
+                        -20
+                    ],
+                    "name": "Business-2",
+                    "color": "#FFD166"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        1.53,
+                        2.37,
+                        1.82
+                    ],
+                    "position": [
+                        -6,
+                        0,
+                        -20
+                    ],
+                    "name": "Business-3",
+                    "color": "#06D6A0"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        1.71,
+                        2.1,
+                        2.17
+                    ],
+                    "position": [
+                        1,
+                        0,
+                        -20
+                    ],
+                    "name": "Business-4",
+                    "color": "#EF476F"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        1.95,
+                        1.63,
+                        1.86
+                    ],
+                    "position": [
+                        -20,
+                        0,
+                        -13
+                    ],
+                    "name": "Business-5",
+                    "color": "#118AB2"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        2.28,
+                        2.33,
+                        2.48
+                    ],
+                    "position": [
+                        -13,
+                        0,
+                        -13
+                    ],
+                    "name": "Business-6",
+                    "color": "#8338EC"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        2.38,
+                        1.9,
+                        2.31
+                    ],
+                    "position": [
+                        -6,
+                        0,
+                        -13
+                    ],
+                    "name": "Business-7",
+                    "color": "#FF006E"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        2.1,
+                        2.46,
+                        2.39
+                    ],
+                    "position": [
+                        1,
+                        0,
+                        -13
+                    ],
+                    "name": "Business-8",
+                    "color": "#3A86FF"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        1.69,
+                        2.32,
+                        1.86
+                    ],
+                    "position": [
+                        -20,
+                        0,
+                        -6
+                    ],
+                    "name": "Business-9",
+                    "color": "#FB5607"
+                },
+                {
+                    "shape": "box",
+                    "size": [
+                        2.25,
+                        2.46,
+                        1.58
+                    ],
+                    "position": [
+                        -13,
+                        0,
+                        -6
+                    ],
+                    "name": "Business-10",
+                    "color": "#FFBE0B"
+                }
+            ]
+        }
+    ],
+    "connections": [
+        { "section": "Integration", "from": "App-5",  "to": "App-1",  "color": "black", "label": "outbound" },
+        { "section": "Integration", "from": "App-9",  "to": "App-5",  "color": "black", "label": "outbound" },
+        { "section": "Integration", "from": "App-10", "to": "App-9",  "color": "black", "label": "outbound" },
+        { "section": "Integration", "from": "App-10", "to": "App-1",  "color": "black", "label": "outbound" },
+        { "section": "Integration", "from": "App-6",  "to": "App-1",  "color": "black", "label": "outbound" },
+        { "section": "Integration", "from": "App-6",  "to": "App-5",  "color": "black", "label": "outbound" },
+        { "section": "Integration", "from": "App-6",  "to": "App-9",  "color": "black", "label": "outbound" },
+        { "section": "Integration", "from": "App-6",  "to": "App-10", "color": "black", "label": "outbound" },
+        { "section": "Integration", "from": "App-6",  "to": "App-11", "color": "black", "label": "outbound" },
+        { "section": "Integration", "from": "App-6",  "to": "App-2",  "color": "black", "label": "outbound" },
+        { "section": "Integration", "from": "App-6",  "to": "App-3",  "color": "black", "label": "outbound" },
+        { "section": "Integration", "from": "App-6",  "to": "App-4",  "color": "black", "label": "outbound" },
+        { "section": "Integration", "from": "App-6",  "to": "App-7",  "color": "black", "label": "outbound" },
+        { "section": "Integration", "from": "App-7",  "to": "App-8",  "color": "black", "label": "outbound" }
+    ]
+}

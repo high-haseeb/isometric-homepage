@@ -8,6 +8,8 @@ export interface Connection {
 }
 
 export interface ModelShape {
+    subsection?: SectionDetails;
+    description?: string;
     shape: string; //"box" | "cone" | "cylinder";
     size: [x: number, y: number, z: number];
     position: [x: number, y: number, z: number];
@@ -18,8 +20,6 @@ export interface ModelShape {
 export interface SectionDetails {
         name: string;
         description: string;
-        primaryColor: string;
-        targetPosition: { x: number; y: number; },
         icon: string;
         models: ModelShape[];
 };
