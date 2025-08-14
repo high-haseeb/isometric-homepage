@@ -23,12 +23,14 @@ export const CameraController = () => {
         gsap.to(controls.target, {
             ...newTarget,
             duration: 1,
+            // ease: "power1.in",
             onUpdate: () => { controls.update() },
         });
 
         gsap.to(controls.object.position, {
             ...newCamPos,
             duration: 1,
+            // ease: "power1.in",
             onUpdate: () => { controls.update() },
         });
     }, [cameraPosition]);

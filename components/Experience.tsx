@@ -54,6 +54,7 @@ export const Experience = () => {
                 position0={[10, 10, 10]} 
                 enableRotate={false}
                 makeDefault />
+
         </Canvas>
     );
 };

@@ -12,7 +12,13 @@ interface SectionProps {
     isSubsection: boolean;
 }
 
-export const Section: React.FC<SectionProps> = ({ section, isActive, position = [-20, 0, 10], scale = 0.5, isSubsection = false }) => {
+export const Section: React.FC<SectionProps> = ({ 
+        section,
+        isActive,
+        position = [-20, 0, 10],
+        scale = 0.5,
+        isSubsection = false 
+    }) => {
     const [shouldRender, setShouldRender] = useState(true);
 
     useEffect(() => {
@@ -65,7 +71,8 @@ export const Section: React.FC<SectionProps> = ({ section, isActive, position = 
     );
 };
 
-const SectionModel = ({ model, index, isSubSection = false }: { model: ModelShape; index: number, isSubSection: boolean }) => {
+const SectionModel = ({ model, index, isSubSection = false } : 
+    { model: ModelShape; index: number, isSubSection: boolean }) => {
     const { setCameraPosition, setActiveSubSectionIndex, setHoverSubSectionIndex, activeSubSectionIndex } = useSectionStore();
 
     const [hovered, setHovered] = useState(false);
@@ -83,7 +90,7 @@ const SectionModel = ({ model, index, isSubSection = false }: { model: ModelShap
                     receiveShadow
                     onClick={() => {
                         !isSubSection && setActiveSubSectionIndex(index);
-                        setCameraPosition({ x: -15, y: -10 });
+                        setCameraPosition({ x: -45, y: 15 });
                     }}
                     onPointerOver={(e) => {
                         e.stopPropagation();
@@ -125,7 +132,7 @@ const SectionModel = ({ model, index, isSubSection = false }: { model: ModelShap
                 {model.subsection && (
                     <Section
                         scale={1}
-                        position={[-5, 0, -50]}
+                        position={[-60, 0, 0]}
                         section={model.subsection}
                         isActive={activeSubSectionIndex == index}
                         isSubsection={true}
