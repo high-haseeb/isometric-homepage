@@ -81,11 +81,21 @@ export const Overlay = () => {
             <div className="fixed top-10 left-10 z-50 font-bold text-white text-2xl flex gap-2">
                 {activeSectionIndex !== Infinity && activeSectionIndex < sections.length && (
                     <>
-                        <span
+                        <span 
                             onClick={() => {
                                 setActiveSectionIndex(Infinity);
                                 setActiveSubSectionIndex(-1);
                                 setCameraPosition({ x: 10, y: 10 });
+                            }}
+                            className="cursor-pointer hover:underline"
+                        >
+                            Landscape
+                        </span>
+                        <span> / </span>
+                        <span
+                            onClick={() => {
+                                setActiveSubSectionIndex(-1);
+                                setCameraPosition({ x: -15, y: 15 });
                             }}
                             className="cursor-pointer hover:underline"
                         >
@@ -96,10 +106,10 @@ export const Overlay = () => {
                             <>
                                 <span>/</span>
                                 <span
-                                    onClick={() => {
-                                        setActiveSubSectionIndex(-1);
-                                        setCameraPosition({ x: -15, y: 15 });
-                                    }}
+                                    //onClick={() => {
+                                    //    setActiveSubSectionIndex(-1);
+                                    //    setCameraPosition({ x: -15, y: 15 });
+                                    //}}
                                     className="cursor-pointer hover:underline"
                                 >
                                     {sections[activeSectionIndex].models[activeSubSectionIndex]?.subsection?.name ?? ""}
