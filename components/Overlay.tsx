@@ -89,7 +89,7 @@ export const Overlay = () => {
                             }}
                             className="cursor-pointer hover:underline"
                         >
-                            Landscape
+                            Landscape layer
                         </span>
                         <span> / </span>
                         <span
