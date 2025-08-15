@@ -7,14 +7,12 @@ import { CameraController } from "@/components/CameraController";
 import { Section } from "@/components/Section";
 import { Ground } from "@/components/Ground";
 import { Pyramid } from "@/components/Pyramid";
-
 import { useSectionStore } from "@/store/sectionsStore";
-import sections from "@/components/data";
 
 export const Scene = () => {
     const { 
         activeSectionIndex,
-        /* sections, */ setSections,
+       sections, setSections,
         connections, setConnections
     } = useSectionStore();
 
@@ -23,10 +21,9 @@ export const Scene = () => {
         .then((res) => res.json())
         .then((data) => {
                 setConnections(data.connections);
-                // setSections(data.sections);
+                setSections(data.sections);
             })
         .catch((err) => console.error('Failed to load config:', err));
-        setSections(sections);
     }, []);
 
     const modelLookup = useMemo(() => {
@@ -63,7 +60,8 @@ export const Scene = () => {
                 connections.map((conn, i) => {
                     const from = modelLookup.get(conn.from);
                     const to = modelLookup.get(conn.to);
-                    const isFromActive = conn.section === sections[activeSectionIndex]?.name;
+                    //const isFromActive = conn.section === sections[activeSectionIndex]?.name;
+                    const isFromActive = sections[activeSectionIndex].models.filter(model => model.name == conn.from).length > 0;
                     if (!from || !to || !isFromActive) return null;
 
                     const scale = 0.5;

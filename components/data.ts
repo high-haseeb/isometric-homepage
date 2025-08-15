@@ -56,7 +56,7 @@ function generateModels(
             subsection = {
                 name: `${sectionName} Sub-${i + 1}`,
                 description: `Subsection ${i + 1} of ${sectionName}`,
-                icon: "/icons/subsection.png",
+                icon: "/icons/gear.png",
                 models: generateModels(`${sectionName} Sub-${i + 1}`, 5, color, -15, -15, false, depth + 1),
             };
         }
@@ -78,42 +78,32 @@ const sections: SectionDetails[] = [
     {
         name: "Business",
         description: "Business operations and strategic processes",
-        primaryColor: "#FF6B6B",
-        targetPosition: { x: -40, y: 40 },
         icon: "/icons/euro.png",
         models: generateModels("Business", 10, "#FFA500", -20, -20, true),
     },
     {
         name: "Application",
         description: "Core software systems and platforms",
-        primaryColor: "#4ECDC4",
-        targetPosition: { x: 40, y: 40 },
         icon: "/icons/package.png",
-        models: generateModels("Application", 10, "#4ECDC4", -20, -20),
+        models: generateModels("Application", 10, "#4ECDC4", -20, -20, true),
     },
     {
         name: "Integration",
         description: "Connectivity and middleware components",
-        primaryColor: "#FFA500",
-        targetPosition: { x: -40, y: -40 },
         icon: "/icons/gear.png",
-        models: generateModels("App", 11, "#FFA500", -20, -20),
+        models: generateModels("App", 11, "#FFA500", -20, -20, true),
     },
     {
         name: "Data",
         description: "Data storage, processing and pipelines",
-        primaryColor: "#6A4C93",
-        targetPosition: { x: 20, y: -40 },
         icon: "/icons/package.png",
-        models: generateModels("Data", 10, "#6A4C93", -20, -20),
+        models: generateModels("Data", 10, "#6A4C93", -20, -20, true),
     },
     {
         name: "Infrastructure",
         description: "Physical and virtual IT infrastructure",
-        primaryColor: "#1A535C",
-        targetPosition: { x: 30, y: -10 },
         icon: "/icons/group.png",
-        models: generateModels("Infrastructure", 12, "#1A535C", -20, -20),
+        models: generateModels("Infrastructure", 12, "#1A535C", -20, -20, true),
     },
 ].reverse();
 

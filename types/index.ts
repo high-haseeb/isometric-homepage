@@ -23,4 +23,3 @@ export interface SectionDetails {
         icon: string;
         models: ModelShape[];
 };
-

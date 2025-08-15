@@ -1,859 +1,1827 @@
 {
-    "sections": [
+  "sections": [
+    {
+      "name": "Infrastructure",
+      "description": "Physical and virtual IT infrastructure",
+      "icon": "/icons/group.png",
+      "models": [
         {
-            "name": "Infrastructure",
-            "description": "Physical and virtual IT infrastructure",
-            "primaryColor": "#1A535C",
-            "icon": "/icons/group.svg",
-            "targetPosition": {
-                "x": 30,
-                "y": -10
-            },
-            "models": [
-                {
-                    "shape": "box",
-                    "size": [ 2.41, 2.44, 1.8 ],
-                    "position": [ -20, 0, -20 ],
-                    "name": "Infra-1",
-                    "color": "#1A535C"
-                },
-                {
-                    "shape": "box",
-                    "size": [ 2.42, 1.69, 2.01 ],
-                    "position": [ -13, 0, -20 ],
-                    "name": "Infra-2",
-                    "color": "#FFD166"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        2.3,
-                        1.7,
-                        2.17
-                    ],
-                    "position": [
-                        -6,
-                        0,
-                        -20
-                    ],
-                    "name": "Infra-3",
-                    "color": "#06D6A0"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        2.34,
-                        1.89,
-                        2.47
-                    ],
-                    "position": [
-                        1,
-                        0,
-                        -20
-                    ],
-                    "name": "Infra-4",
-                    "color": "#EF476F"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        2.1,
-                        1.93,
-                        2.1
-                    ],
-                    "position": [
-                        -20,
-                        0,
-                        -13
-                    ],
-                    "name": "Infra-5",
-                    "color": "#118AB2"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        1.98,
-                        2.07,
-                        2.02
-                    ],
-                    "position": [
-                        -13,
-                        0,
-                        -13
-                    ],
-                    "name": "Infra-6",
-                    "color": "#8338EC"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        2.48,
-                        1.65,
-                        2.11
-                    ],
-                    "position": [
-                        -6,
-                        0,
-                        -13
-                    ],
-                    "name": "Infra-7",
-                    "color": "#FF006E"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        1.94,
-                        2.08,
-                        1.61
-                    ],
-                    "position": [
-                        1,
-                        0,
-                        -13
-                    ],
-                    "name": "Infra-8",
-                    "color": "#3A86FF"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        2.3,
-                        1.58,
-                        1.65
-                    ],
-                    "position": [
-                        -20,
-                        0,
-                        -6
-                    ],
-                    "name": "Infra-9",
-                    "color": "#FB5607"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        2.34,
-                        1.76,
-                        2.07
-                    ],
-                    "position": [
-                        -13,
-                        0,
-                        -6
-                    ],
-                    "name": "Infra-10",
-                    "color": "#FFBE0B"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        1.71,
-                        1.84,
-                        2.5
-                    ],
-                    "position": [
-                        -6,
-                        0,
-                        -6
-                    ],
-                    "name": "Infra-11",
-                    "color": "#00F5D4"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        2.2,
-                        1.68,
-                        1.99
-                    ],
-                    "position": [
-                        1,
-                        0,
-                        -6
-                    ],
-                    "name": "Infra-12",
-                    "color": "#1A535C"
-                }
-            ]
+          "name": "Infrastructure-1",
+          "description": "Model in Infrastructure",
+          "shape": "box",
+          "size": [
+            1.96,
+            1.86,
+            2.23
+          ],
+          "position": [
+            -20,
+            0,
+            -20
+          ],
+          "color": "#1A535C"
         },
         {
-            "name": "Data",
-            "description": "Data storage, processing and pipelines",
-            "primaryColor": "#6A4C93",
-            "icon": "/icons/package.svg",
-            "targetPosition": {
-                "x": 20,
-                "y": -40
-            },
-            "models": [
-                {
-                    "shape": "box",
-                    "size": [
-                        2.45,
-                        2.01,
-                        1.98
-                    ],
-                    "position": [
-                        -20,
-                        0,
-                        -20
-                    ],
-                    "name": "Data-1",
-                    "color": "#6A4C93"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        2.01,
-                        1.6,
-                        2.19
-                    ],
-                    "position": [
-                        -13,
-                        0,
-                        -20
-                    ],
-                    "name": "Data-2",
-                    "color": "#FFD166"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        1.9,
-                        2.27,
-                        2.22
-                    ],
-                    "position": [
-                        -6,
-                        0,
-                        -20
-                    ],
-                    "name": "Data-3",
-                    "color": "#06D6A0"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        1.98,
-                        1.9,
-                        2.04
-                    ],
-                    "position": [
-                        1,
-                        0,
-                        -20
-                    ],
-                    "name": "Data-4",
-                    "color": "#EF476F"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        2.47,
-                        2.39,
-                        1.61
-                    ],
-                    "position": [
-                        -20,
-                        0,
-                        -13
-                    ],
-                    "name": "Data-5",
-                    "color": "#118AB2"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        2.34,
-                        1.8,
-                        1.64
-                    ],
-                    "position": [
-                        -13,
-                        0,
-                        -13
-                    ],
-                    "name": "Data-6",
-                    "color": "#8338EC"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        1.98,
-                        2.25,
-                        2.43
-                    ],
-                    "position": [
-                        -6,
-                        0,
-                        -13
-                    ],
-                    "name": "Data-7",
-                    "color": "#FF006E"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        2.42,
-                        1.87,
-                        1.76
-                    ],
-                    "position": [
-                        1,
-                        0,
-                        -13
-                    ],
-                    "name": "Data-8",
-                    "color": "#3A86FF"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        2.26,
-                        1.6,
-                        1.52
-                    ],
-                    "position": [
-                        -20,
-                        0,
-                        -6
-                    ],
-                    "name": "Data-9",
-                    "color": "#FB5607"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        1.67,
-                        1.72,
-                        1.84
-                    ],
-                    "position": [
-                        -13,
-                        0,
-                        -6
-                    ],
-                    "name": "Data-10",
-                    "color": "#FFBE0B"
-                }
-            ]
+          "name": "Infrastructure-2",
+          "description": "Model in Infrastructure",
+          "shape": "box",
+          "size": [
+            1.54,
+            2.27,
+            2.27
+          ],
+          "position": [
+            -13,
+            0,
+            -20
+          ],
+          "color": "#FFD166"
         },
         {
-            "name": "Integration",
-            "description": "Connectivity and middleware components",
-            "primaryColor": "#FFA500",
-            "icon": "/icons/gear.svg",
-            "targetPosition": {
-                "x": -40,
-                "y": -40
-            },
-            "models": [
-                {
-                    "shape": "box",
-                    "size": [
-                        1.86,
-                        1.74,
-                        1.56
-                    ],
-                    "position": [
-                        -20,
-                        0,
-                        -20
-                    ],
-                    "name": "App-1",
-                    "color": "#FFA500"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        2.27,
-                        2.41,
-                        2.18
-                    ],
-                    "position": [
-                        -13,
-                        0,
-                        -20
-                    ],
-                    "name": "App-2",
-                    "color": "#FFD166"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        1.55,
-                        2.49,
-                        1.54
-                    ],
-                    "position": [
-                        -6,
-                        0,
-                        -20
-                    ],
-                    "name": "App-3",
-                    "color": "#06D6A0"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        1.55,
-                        1.97,
-                        1.98
-                    ],
-                    "position": [
-                        1,
-                        0,
-                        -20
-                    ],
-                    "name": "App-4",
-                    "color": "#EF476F"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        2.37,
-                        1.67,
-                        2.03
-                    ],
-                    "position": [
-                        -20,
-                        0,
-                        -13
-                    ],
-                    "name": "App-5",
-                    "color": "#118AB2"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        2.14,
-                        1.61,
-                        2.09
-                    ],
-                    "position": [
-                        -13,
-                        0,
-                        -13
-                    ],
-                    "name": "App-6",
-                    "color": "#8338EC"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        1.89,
-                        1.62,
-                        1.78
-                    ],
-                    "position": [
-                        -6,
-                        0,
-                        -13
-                    ],
-                    "name": "App-7",
-                    "color": "#FF006E"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        2.33,
-                        1.64,
-                        2.22
-                    ],
-                    "position": [
-                        1,
-                        0,
-                        -13
-                    ],
-                    "name": "App-8",
-                    "color": "#3A86FF"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        1.82,
-                        2.4,
-                        2.47
-                    ],
-                    "position": [
-                        -20,
-                        0,
-                        -6
-                    ],
-                    "name": "App-9",
-                    "color": "#FB5607"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        2.23,
-                        2.13,
-                        1.71
-                    ],
-                    "position": [
-                        -13,
-                        0,
-                        -6
-                    ],
-                    "name": "App-10",
-                    "color": "#FFBE0B"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        1.98,
-                        2.27,
-                        2.24
-                    ],
-                    "position": [
-                        -6,
-                        0,
-                        -6
-                    ],
-                    "name": "App-11",
-                    "color": "#00F5D4"
-                }
-            ]
+          "name": "Infrastructure-3",
+          "description": "Model in Infrastructure",
+          "shape": "box",
+          "size": [
+            2.09,
+            2.14,
+            1.89
+          ],
+          "position": [
+            -6,
+            0,
+            -20
+          ],
+          "color": "#06D6A0"
         },
         {
-            "name": "Application",
-            "description": "Core software systems and platforms",
-            "primaryColor": "#4ECDC4",
-            "icon": "/icons/package.svg",
-            "targetPosition": {
-                "x": 40,
-                "y": 40
-            },
-            "models": [
-                {
-                    "shape": "box",
-                    "size": [
-                        1.97,
-                        1.53,
-                        2.36
-                    ],
-                    "position": [
-                        -20,
-                        0,
-                        -20
-                    ],
-                    "name": "App--1",
-                    "color": "#4ECDC4"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        1.92,
-                        2.07,
-                        1.85
-                    ],
-                    "position": [
-                        -13,
-                        0,
-                        -20
-                    ],
-                    "name": "App--2",
-                    "color": "#FFD166"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        1.73,
-                        1.73,
-                        1.57
-                    ],
-                    "position": [
-                        -6,
-                        0,
-                        -20
-                    ],
-                    "name": "App--3",
-                    "color": "#06D6A0"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        2.19,
-                        1.58,
-                        2.29
-                    ],
-                    "position": [
-                        1,
-                        0,
-                        -20
-                    ],
-                    "name": "App--4",
-                    "color": "#EF476F"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        2.11,
-                        1.82,
-                        2.42
-                    ],
-                    "position": [
-                        -20,
-                        0,
-                        -13
-                    ],
-                    "name": "App--5",
-                    "color": "#118AB2"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        1.59,
-                        1.51,
-                        1.8
-                    ],
-                    "position": [
-                        -13,
-                        0,
-                        -13
-                    ],
-                    "name": "App--6",
-                    "color": "#8338EC"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        2.25,
-                        1.92,
-                        2.08
-                    ],
-                    "position": [
-                        -6,
-                        0,
-                        -13
-                    ],
-                    "name": "App--7",
-                    "color": "#FF006E"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        1.59,
-                        2,
-                        2.22
-                    ],
-                    "position": [
-                        1,
-                        0,
-                        -13
-                    ],
-                    "name": "App--8",
-                    "color": "#3A86FF"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        1.88,
-                        1.75,
-                        1.94
-                    ],
-                    "position": [
-                        -20,
-                        0,
-                        -6
-                    ],
-                    "name": "App--9",
-                    "color": "#FB5607"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        1.84,
-                        2.36,
-                        2.47
-                    ],
-                    "position": [
-                        -13,
-                        0,
-                        -6
-                    ],
-                    "name": "App--10",
-                    "color": "#FFBE0B"
-                }
-            ]
+          "name": "Infrastructure-4",
+          "description": "Model in Infrastructure",
+          "shape": "box",
+          "size": [
+            2.08,
+            1.65,
+            2.25
+          ],
+          "position": [
+            1,
+            0,
+            -20
+          ],
+          "color": "#EF476F"
         },
         {
-            "name": "Business",
-            "description": "Business operations and strategic processes",
-            "primaryColor": "#FF6B6B",
-            "icon": "/icons/euro.svg",
-            "targetPosition": {
-                "x": -40,
-                "y": 40
-            },
-            "models": [
-                {
-                    "shape": "box",
-                    "size": [
-                        1.54,
-                        2.47,
-                        2.47
-                    ],
-                    "position": [
-                        -20,
-                        0,
-                        -20
-                    ],
-                    "name": "Business-1",
-                    "color": "#FFA500"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        1.63,
-                        2.39,
-                        2.29
-                    ],
-                    "position": [
-                        -13,
-                        0,
-                        -20
-                    ],
-                    "name": "Business-2",
-                    "color": "#FFD166"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        1.53,
-                        2.37,
-                        1.82
-                    ],
-                    "position": [
-                        -6,
-                        0,
-                        -20
-                    ],
-                    "name": "Business-3",
-                    "color": "#06D6A0"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        1.71,
-                        2.1,
-                        2.17
-                    ],
-                    "position": [
-                        1,
-                        0,
-                        -20
-                    ],
-                    "name": "Business-4",
-                    "color": "#EF476F"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        1.95,
-                        1.63,
-                        1.86
-                    ],
-                    "position": [
-                        -20,
-                        0,
-                        -13
-                    ],
-                    "name": "Business-5",
-                    "color": "#118AB2"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        2.28,
-                        2.33,
-                        2.48
-                    ],
-                    "position": [
-                        -13,
-                        0,
-                        -13
-                    ],
-                    "name": "Business-6",
-                    "color": "#8338EC"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        2.38,
-                        1.9,
-                        2.31
-                    ],
-                    "position": [
-                        -6,
-                        0,
-                        -13
-                    ],
-                    "name": "Business-7",
-                    "color": "#FF006E"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        2.1,
-                        2.46,
-                        2.39
-                    ],
-                    "position": [
-                        1,
-                        0,
-                        -13
-                    ],
-                    "name": "Business-8",
-                    "color": "#3A86FF"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        1.69,
-                        2.32,
-                        1.86
-                    ],
-                    "position": [
-                        -20,
-                        0,
-                        -6
-                    ],
-                    "name": "Business-9",
-                    "color": "#FB5607"
-                },
-                {
-                    "shape": "box",
-                    "size": [
-                        2.25,
-                        2.46,
-                        1.58
-                    ],
-                    "position": [
-                        -13,
-                        0,
-                        -6
-                    ],
-                    "name": "Business-10",
-                    "color": "#FFBE0B"
-                }
-            ]
+          "name": "Infrastructure-5",
+          "description": "Model in Infrastructure",
+          "shape": "box",
+          "size": [
+            2.39,
+            2.13,
+            1.54
+          ],
+          "position": [
+            -20,
+            0,
+            -13
+          ],
+          "color": "#118AB2"
+        },
+        {
+          "name": "Infrastructure-6",
+          "description": "Model in Infrastructure",
+          "shape": "box",
+          "size": [
+            2.03,
+            1.51,
+            1.83
+          ],
+          "position": [
+            -13,
+            0,
+            -13
+          ],
+          "color": "#8338EC"
+        },
+        {
+          "name": "Infrastructure-7",
+          "description": "Model in Infrastructure",
+          "shape": "box",
+          "size": [
+            2.17,
+            2.13,
+            2.12
+          ],
+          "position": [
+            -6,
+            0,
+            -13
+          ],
+          "color": "#FF006E"
+        },
+        {
+          "name": "Infrastructure-8",
+          "description": "Model in Infrastructure",
+          "shape": "box",
+          "size": [
+            1.72,
+            1.56,
+            2.44
+          ],
+          "position": [
+            1,
+            0,
+            -13
+          ],
+          "color": "#3A86FF"
+        },
+        {
+          "name": "Infrastructure-9",
+          "description": "Model in Infrastructure",
+          "shape": "box",
+          "size": [
+            1.5,
+            1.76,
+            1.55
+          ],
+          "position": [
+            -20,
+            0,
+            -6
+          ],
+          "color": "#FB5607"
+        },
+        {
+          "name": "Infrastructure-10",
+          "description": "Model in Infrastructure",
+          "shape": "box",
+          "size": [
+            2.25,
+            1.81,
+            1.87
+          ],
+          "position": [
+            -13,
+            0,
+            -6
+          ],
+          "color": "#FFBE0B"
+        },
+        {
+          "name": "Infrastructure-11",
+          "description": "Model in Infrastructure",
+          "shape": "box",
+          "size": [
+            1.56,
+            1.96,
+            2.06
+          ],
+          "position": [
+            -6,
+            0,
+            -6
+          ],
+          "color": "#00F5D4"
+        },
+        {
+          "name": "Infrastructure-12",
+          "description": "Model in Infrastructure",
+          "shape": "box",
+          "size": [
+            2.41,
+            2.14,
+            1.74
+          ],
+          "position": [
+            1,
+            0,
+            -6
+          ],
+          "color": "#1A535C"
         }
-    ],
-    "connections": [
-        { "section": "Integration", "from": "App-5",  "to": "App-1",  "color": "black", "label": "outbound" },
-        { "section": "Integration", "from": "App-9",  "to": "App-5",  "color": "black", "label": "outbound" },
-        { "section": "Integration", "from": "App-10", "to": "App-9",  "color": "black", "label": "outbound" },
-        { "section": "Integration", "from": "App-10", "to": "App-1",  "color": "black", "label": "outbound" },
-        { "section": "Integration", "from": "App-6",  "to": "App-1",  "color": "black", "label": "outbound" },
-        { "section": "Integration", "from": "App-6",  "to": "App-5",  "color": "black", "label": "outbound" },
-        { "section": "Integration", "from": "App-6",  "to": "App-9",  "color": "black", "label": "outbound" },
-        { "section": "Integration", "from": "App-6",  "to": "App-10", "color": "black", "label": "outbound" },
-        { "section": "Integration", "from": "App-6",  "to": "App-11", "color": "black", "label": "outbound" },
-        { "section": "Integration", "from": "App-6",  "to": "App-2",  "color": "black", "label": "outbound" },
-        { "section": "Integration", "from": "App-6",  "to": "App-3",  "color": "black", "label": "outbound" },
-        { "section": "Integration", "from": "App-6",  "to": "App-4",  "color": "black", "label": "outbound" },
-        { "section": "Integration", "from": "App-6",  "to": "App-7",  "color": "black", "label": "outbound" },
-        { "section": "Integration", "from": "App-7",  "to": "App-8",  "color": "black", "label": "outbound" }
-    ]
+      ]
+    },
+    {
+      "name": "Data",
+      "description": "Data storage, processing and pipelines",
+      "icon": "/icons/package.png",
+      "models": [
+        {
+          "name": "Data-1",
+          "description": "Model in Data",
+          "shape": "box",
+          "size": [
+            2.36,
+            1.58,
+            2.29
+          ],
+          "position": [
+            -20,
+            0,
+            -20
+          ],
+          "color": "#6A4C93"
+        },
+        {
+          "name": "Data-2",
+          "description": "Model in Data",
+          "shape": "box",
+          "size": [
+            2.37,
+            1.59,
+            1.58
+          ],
+          "position": [
+            -13,
+            0,
+            -20
+          ],
+          "color": "#FFD166"
+        },
+        {
+          "name": "Data-3",
+          "description": "Model in Data",
+          "shape": "box",
+          "size": [
+            1.9,
+            2.04,
+            1.64
+          ],
+          "position": [
+            -6,
+            0,
+            -20
+          ],
+          "color": "#06D6A0"
+        },
+        {
+          "name": "Data-4",
+          "description": "Model in Data",
+          "shape": "box",
+          "size": [
+            2.14,
+            1.99,
+            1.78
+          ],
+          "position": [
+            1,
+            0,
+            -20
+          ],
+          "color": "#EF476F"
+        },
+        {
+          "name": "Data-5",
+          "description": "Model in Data",
+          "shape": "box",
+          "size": [
+            2.08,
+            1.88,
+            2.08
+          ],
+          "position": [
+            -20,
+            0,
+            -13
+          ],
+          "color": "#118AB2"
+        },
+        {
+          "name": "Data-6",
+          "description": "Model in Data",
+          "shape": "box",
+          "size": [
+            1.77,
+            1.82,
+            2.16
+          ],
+          "position": [
+            -13,
+            0,
+            -13
+          ],
+          "color": "#8338EC"
+        },
+        {
+          "name": "Data-7",
+          "description": "Model in Data",
+          "shape": "box",
+          "size": [
+            2.07,
+            2.08,
+            2.45
+          ],
+          "position": [
+            -6,
+            0,
+            -13
+          ],
+          "color": "#FF006E"
+        },
+        {
+          "name": "Data-8",
+          "description": "Model in Data",
+          "shape": "box",
+          "size": [
+            1.63,
+            2.23,
+            1.69
+          ],
+          "position": [
+            1,
+            0,
+            -13
+          ],
+          "color": "#3A86FF"
+        },
+        {
+          "name": "Data-9",
+          "description": "Model in Data",
+          "shape": "box",
+          "size": [
+            1.96,
+            1.53,
+            1.91
+          ],
+          "position": [
+            -20,
+            0,
+            -6
+          ],
+          "color": "#FB5607"
+        },
+        {
+          "name": "Data-10",
+          "description": "Model in Data",
+          "shape": "box",
+          "size": [
+            1.85,
+            2.15,
+            2
+          ],
+          "position": [
+            -13,
+            0,
+            -6
+          ],
+          "color": "#FFBE0B"
+        }
+      ]
+    },
+    {
+      "name": "Integration",
+      "description": "Connectivity and middleware components",
+      "icon": "/icons/gear.png",
+      "models": [
+        {
+          "name": "App-1",
+          "description": "Model in Integration",
+          "shape": "box",
+          "size": [
+            2.17,
+            1.75,
+            2.14
+          ],
+          "position": [
+            -20,
+            0,
+            -20
+          ],
+          "color": "#FFA500"
+        },
+        {
+          "name": "App-2",
+          "description": "Model in Integration",
+          "shape": "box",
+          "size": [
+            1.96,
+            2.08,
+            1.53
+          ],
+          "position": [
+            -13,
+            0,
+            -20
+          ],
+          "color": "#FFD166"
+        },
+        {
+          "name": "App-3",
+          "description": "Model in Integration",
+          "shape": "box",
+          "size": [
+            1.95,
+            1.91,
+            2.22
+          ],
+          "position": [
+            -6,
+            0,
+            -20
+          ],
+          "color": "#06D6A0"
+        },
+        {
+          "name": "App-4",
+          "description": "Model in Integration",
+          "shape": "box",
+          "size": [
+            2.47,
+            1.78,
+            2.34
+          ],
+          "position": [
+            1,
+            0,
+            -20
+          ],
+          "color": "#EF476F"
+        },
+        {
+          "name": "App-5",
+          "description": "Model in Integration",
+          "shape": "box",
+          "size": [
+            1.77,
+            1.83,
+            2.17
+          ],
+          "position": [
+            -20,
+            0,
+            -13
+          ],
+          "color": "#118AB2"
+        },
+        {
+          "name": "App-6",
+          "description": "Model in Integration",
+          "shape": "box",
+          "size": [
+            2.09,
+            1.71,
+            1.65
+          ],
+          "position": [
+            -13,
+            0,
+            -13
+          ],
+          "color": "#8338EC"
+        },
+        {
+          "name": "App-7",
+          "description": "Model in Integration",
+          "shape": "box",
+          "size": [
+            2.12,
+            1.6,
+            1.8
+          ],
+          "position": [
+            -6,
+            0,
+            -13
+          ],
+          "color": "#FF006E"
+        },
+        {
+          "name": "App-8",
+          "description": "Model in Integration",
+          "shape": "box",
+          "size": [
+            1.5,
+            1.99,
+            2.46
+          ],
+          "position": [
+            1,
+            0,
+            -13
+          ],
+          "color": "#3A86FF"
+        },
+        {
+          "name": "App-9",
+          "description": "Model in Integration",
+          "shape": "box",
+          "size": [
+            1.62,
+            1.93,
+            2.16
+          ],
+          "position": [
+            -20,
+            0,
+            -6
+          ],
+          "color": "#FB5607"
+        },
+        {
+          "name": "App-10",
+          "description": "Model in Integration",
+          "shape": "box",
+          "size": [
+            2.3,
+            1.85,
+            2.31
+          ],
+          "position": [
+            -13,
+            0,
+            -6
+          ],
+          "color": "#FFBE0B"
+        },
+        {
+          "name": "App-11",
+          "description": "Model in Integration",
+          "shape": "box",
+          "size": [
+            1.88,
+            2.11,
+            1.8
+          ],
+          "position": [
+            -6,
+            0,
+            -6
+          ],
+          "color": "#00F5D4"
+        }
+      ]
+    },
+    {
+      "name": "Application",
+      "description": "Core software systems and platforms",
+      "icon": "/icons/package.png",
+      "models": [
+        {
+          "name": "Application-1",
+          "description": "Model in Application",
+          "shape": "box",
+          "size": [
+            2.45,
+            1.7,
+            2.1
+          ],
+          "position": [
+            -20,
+            0,
+            -20
+          ],
+          "color": "#4ECDC4"
+        },
+        {
+          "name": "Application-2",
+          "description": "Model in Application",
+          "shape": "box",
+          "size": [
+            2.09,
+            2.33,
+            2.19
+          ],
+          "position": [
+            -13,
+            0,
+            -20
+          ],
+          "color": "#FFD166"
+        },
+        {
+          "name": "Application-3",
+          "description": "Model in Application",
+          "shape": "box",
+          "size": [
+            1.67,
+            1.92,
+            1.86
+          ],
+          "position": [
+            -6,
+            0,
+            -20
+          ],
+          "color": "#06D6A0"
+        },
+        {
+          "name": "Application-4",
+          "description": "Model in Application",
+          "shape": "box",
+          "size": [
+            2.13,
+            1.89,
+            2.03
+          ],
+          "position": [
+            1,
+            0,
+            -20
+          ],
+          "color": "#EF476F"
+        },
+        {
+          "name": "Application-5",
+          "description": "Model in Application",
+          "shape": "box",
+          "size": [
+            1.92,
+            1.78,
+            1.54
+          ],
+          "position": [
+            -20,
+            0,
+            -13
+          ],
+          "color": "#118AB2"
+        },
+        {
+          "name": "Application-6",
+          "description": "Model in Application",
+          "shape": "box",
+          "size": [
+            1.86,
+            1.61,
+            2.27
+          ],
+          "position": [
+            -13,
+            0,
+            -13
+          ],
+          "color": "#8338EC"
+        },
+        {
+          "name": "Application-7",
+          "description": "Model in Application",
+          "shape": "box",
+          "size": [
+            1.88,
+            2.01,
+            1.61
+          ],
+          "position": [
+            -6,
+            0,
+            -13
+          ],
+          "color": "#FF006E"
+        },
+        {
+          "name": "Application-8",
+          "description": "Model in Application",
+          "shape": "box",
+          "size": [
+            1.98,
+            2.29,
+            1.84
+          ],
+          "position": [
+            1,
+            0,
+            -13
+          ],
+          "color": "#3A86FF"
+        },
+        {
+          "name": "Application-9",
+          "description": "Model in Application",
+          "shape": "box",
+          "size": [
+            1.94,
+            1.94,
+            1.62
+          ],
+          "position": [
+            -20,
+            0,
+            -6
+          ],
+          "color": "#FB5607"
+        },
+        {
+          "name": "Application-10",
+          "description": "Model in Application",
+          "shape": "box",
+          "size": [
+            1.98,
+            1.99,
+            2
+          ],
+          "position": [
+            -13,
+            0,
+            -6
+          ],
+          "color": "#FFBE0B"
+        }
+      ]
+    },
+    {
+      "name": "Business",
+      "description": "Business operations and strategic processes",
+      "icon": "/icons/euro.png",
+      "models": [
+        {
+          "name": "Sales",
+          "description": "Model in Business",
+          "shape": "box",
+          "size": [
+            1.98,
+            1.99,
+            1.94
+          ],
+          "position": [
+            -20,
+            0,
+            -20
+          ],
+          "color": "#FFA500",
+          "subsection": {
+            "name": "Business Sub-1",
+            "description": "Subsection 1 of Business",
+            "icon": "/icons/gear.png",
+            "models": [
+              {
+                "name": "Business Sub-1-1",
+                "description": "Model in Business Sub-1",
+                "shape": "box",
+                "size": [
+                  1.62,
+                  2.16,
+                  2.33
+                ],
+                "position": [
+                  -15,
+                  0,
+                  -15
+                ],
+                "color": "#FFA500"
+              },
+              {
+                "name": "Business Sub-1-2",
+                "description": "Model in Business Sub-1",
+                "shape": "box",
+                "size": [
+                  1.77,
+                  1.74,
+                  1.93
+                ],
+                "position": [
+                  -8,
+                  0,
+                  -15
+                ],
+                "color": "#FFD166"
+              },
+              {
+                "name": "Business Sub-1-3",
+                "description": "Model in Business Sub-1",
+                "shape": "box",
+                "size": [
+                  1.62,
+                  1.73,
+                  1.85
+                ],
+                "position": [
+                  -1,
+                  0,
+                  -15
+                ],
+                "color": "#06D6A0"
+              },
+              {
+                "name": "Business Sub-1-4",
+                "description": "Model in Business Sub-1",
+                "shape": "box",
+                "size": [
+                  2.46,
+                  2.27,
+                  1.68
+                ],
+                "position": [
+                  -15,
+                  0,
+                  -8
+                ],
+                "color": "#EF476F"
+              },
+              {
+                "name": "Business Sub-1-5",
+                "description": "Model in Business Sub-1",
+                "shape": "box",
+                "size": [
+                  2.26,
+                  2,
+                  1.5
+                ],
+                "position": [
+                  -8,
+                  0,
+                  -8
+                ],
+                "color": "#118AB2"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Business-2",
+          "description": "Model in Business",
+          "shape": "box",
+          "size": [
+            1.52,
+            1.95,
+            1.93
+          ],
+          "position": [
+            -13,
+            0,
+            -20
+          ],
+          "color": "#FFD166",
+          "subsection": {
+            "name": "Business Sub-2",
+            "description": "Subsection 2 of Business",
+            "icon": "/icons/gear.png",
+            "models": [
+              {
+                "name": "Business Sub-2-1",
+                "description": "Model in Business Sub-2",
+                "shape": "box",
+                "size": [
+                  2.42,
+                  2.31,
+                  2.37
+                ],
+                "position": [
+                  -15,
+                  0,
+                  -15
+                ],
+                "color": "#FFD166"
+              },
+              {
+                "name": "Business Sub-2-2",
+                "description": "Model in Business Sub-2",
+                "shape": "box",
+                "size": [
+                  1.64,
+                  2.24,
+                  1.63
+                ],
+                "position": [
+                  -8,
+                  0,
+                  -15
+                ],
+                "color": "#FFD166"
+              },
+              {
+                "name": "Business Sub-2-3",
+                "description": "Model in Business Sub-2",
+                "shape": "box",
+                "size": [
+                  2.25,
+                  2.24,
+                  1.9
+                ],
+                "position": [
+                  -1,
+                  0,
+                  -15
+                ],
+                "color": "#06D6A0"
+              },
+              {
+                "name": "Business Sub-2-4",
+                "description": "Model in Business Sub-2",
+                "shape": "box",
+                "size": [
+                  2.17,
+                  2.01,
+                  1.61
+                ],
+                "position": [
+                  -15,
+                  0,
+                  -8
+                ],
+                "color": "#EF476F"
+              },
+              {
+                "name": "Business Sub-2-5",
+                "description": "Model in Business Sub-2",
+                "shape": "box",
+                "size": [
+                  1.96,
+                  2.24,
+                  1.82
+                ],
+                "position": [
+                  -8,
+                  0,
+                  -8
+                ],
+                "color": "#118AB2"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Business-3",
+          "description": "Model in Business",
+          "shape": "box",
+          "size": [
+            2.35,
+            1.9,
+            2
+          ],
+          "position": [
+            -6,
+            0,
+            -20
+          ],
+          "color": "#06D6A0",
+          "subsection": {
+            "name": "Business Sub-3",
+            "description": "Subsection 3 of Business",
+            "icon": "/icons/gear.png",
+            "models": [
+              {
+                "name": "Business Sub-3-1",
+                "description": "Model in Business Sub-3",
+                "shape": "box",
+                "size": [
+                  1.88,
+                  1.66,
+                  2.09
+                ],
+                "position": [
+                  -15,
+                  0,
+                  -15
+                ],
+                "color": "#06D6A0"
+              },
+              {
+                "name": "Business Sub-3-2",
+                "description": "Model in Business Sub-3",
+                "shape": "box",
+                "size": [
+                  2.25,
+                  2.05,
+                  2.35
+                ],
+                "position": [
+                  -8,
+                  0,
+                  -15
+                ],
+                "color": "#FFD166"
+              },
+              {
+                "name": "Business Sub-3-3",
+                "description": "Model in Business Sub-3",
+                "shape": "box",
+                "size": [
+                  2.18,
+                  1.69,
+                  2.43
+                ],
+                "position": [
+                  -1,
+                  0,
+                  -15
+                ],
+                "color": "#06D6A0"
+              },
+              {
+                "name": "Business Sub-3-4",
+                "description": "Model in Business Sub-3",
+                "shape": "box",
+                "size": [
+                  1.59,
+                  1.73,
+                  2.46
+                ],
+                "position": [
+                  -15,
+                  0,
+                  -8
+                ],
+                "color": "#EF476F"
+              },
+              {
+                "name": "Business Sub-3-5",
+                "description": "Model in Business Sub-3",
+                "shape": "box",
+                "size": [
+                  1.66,
+                  2.16,
+                  1.91
+                ],
+                "position": [
+                  -8,
+                  0,
+                  -8
+                ],
+                "color": "#118AB2"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Business-4",
+          "description": "Model in Business",
+          "shape": "box",
+          "size": [
+            2.03,
+            2.12,
+            2.5
+          ],
+          "position": [
+            1,
+            0,
+            -20
+          ],
+          "color": "#EF476F",
+          "subsection": {
+            "name": "Business Sub-4",
+            "description": "Subsection 4 of Business",
+            "icon": "/icons/gear.png",
+            "models": [
+              {
+                "name": "Business Sub-4-1",
+                "description": "Model in Business Sub-4",
+                "shape": "box",
+                "size": [
+                  1.8,
+                  1.9,
+                  1.99
+                ],
+                "position": [
+                  -15,
+                  0,
+                  -15
+                ],
+                "color": "#EF476F"
+              },
+              {
+                "name": "Business Sub-4-2",
+                "description": "Model in Business Sub-4",
+                "shape": "box",
+                "size": [
+                  1.56,
+                  2.35,
+                  2.14
+                ],
+                "position": [
+                  -8,
+                  0,
+                  -15
+                ],
+                "color": "#FFD166"
+              },
+              {
+                "name": "Business Sub-4-3",
+                "description": "Model in Business Sub-4",
+                "shape": "box",
+                "size": [
+                  1.74,
+                  1.51,
+                  2.22
+                ],
+                "position": [
+                  -1,
+                  0,
+                  -15
+                ],
+                "color": "#06D6A0"
+              },
+              {
+                "name": "Business Sub-4-4",
+                "description": "Model in Business Sub-4",
+                "shape": "box",
+                "size": [
+                  2.07,
+                  1.91,
+                  1.56
+                ],
+                "position": [
+                  -15,
+                  0,
+                  -8
+                ],
+                "color": "#EF476F"
+              },
+              {
+                "name": "Business Sub-4-5",
+                "description": "Model in Business Sub-4",
+                "shape": "box",
+                "size": [
+                  1.88,
+                  2.36,
+                  2.26
+                ],
+                "position": [
+                  -8,
+                  0,
+                  -8
+                ],
+                "color": "#118AB2"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Business-5",
+          "description": "Model in Business",
+          "shape": "box",
+          "size": [
+            2.33,
+            1.66,
+            2.2
+          ],
+          "position": [
+            -20,
+            0,
+            -13
+          ],
+          "color": "#118AB2",
+          "subsection": {
+            "name": "Business Sub-5",
+            "description": "Subsection 5 of Business",
+            "icon": "/icons/gear.png",
+            "models": [
+              {
+                "name": "Business Sub-5-1",
+                "description": "Model in Business Sub-5",
+                "shape": "box",
+                "size": [
+                  1.51,
+                  1.84,
+                  1.64
+                ],
+                "position": [
+                  -15,
+                  0,
+                  -15
+                ],
+                "color": "#118AB2"
+              },
+              {
+                "name": "Business Sub-5-2",
+                "description": "Model in Business Sub-5",
+                "shape": "box",
+                "size": [
+                  1.64,
+                  2.28,
+                  1.65
+                ],
+                "position": [
+                  -8,
+                  0,
+                  -15
+                ],
+                "color": "#FFD166"
+              },
+              {
+                "name": "Business Sub-5-3",
+                "description": "Model in Business Sub-5",
+                "shape": "box",
+                "size": [
+                  2.21,
+                  1.65,
+                  1.55
+                ],
+                "position": [
+                  -1,
+                  0,
+                  -15
+                ],
+                "color": "#06D6A0"
+              },
+              {
+                "name": "Business Sub-5-4",
+                "description": "Model in Business Sub-5",
+                "shape": "box",
+                "size": [
+                  1.78,
+                  2.15,
+                  2.13
+                ],
+                "position": [
+                  -15,
+                  0,
+                  -8
+                ],
+                "color": "#EF476F"
+              },
+              {
+                "name": "Business Sub-5-5",
+                "description": "Model in Business Sub-5",
+                "shape": "box",
+                "size": [
+                  2.34,
+                  2.28,
+                  1.79
+                ],
+                "position": [
+                  -8,
+                  0,
+                  -8
+                ],
+                "color": "#118AB2"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Business-6",
+          "description": "Model in Business",
+          "shape": "box",
+          "size": [
+            1.7,
+            2.14,
+            2.49
+          ],
+          "position": [
+            -13,
+            0,
+            -13
+          ],
+          "color": "#8338EC",
+          "subsection": {
+            "name": "Business Sub-6",
+            "description": "Subsection 6 of Business",
+            "icon": "/icons/gear.png",
+            "models": [
+              {
+                "name": "Business Sub-6-1",
+                "description": "Model in Business Sub-6",
+                "shape": "box",
+                "size": [
+                  1.83,
+                  2.29,
+                  2.32
+                ],
+                "position": [
+                  -15,
+                  0,
+                  -15
+                ],
+                "color": "#8338EC"
+              },
+              {
+                "name": "Business Sub-6-2",
+                "description": "Model in Business Sub-6",
+                "shape": "box",
+                "size": [
+                  2.49,
+                  1.78,
+                  1.97
+                ],
+                "position": [
+                  -8,
+                  0,
+                  -15
+                ],
+                "color": "#FFD166"
+              },
+              {
+                "name": "Business Sub-6-3",
+                "description": "Model in Business Sub-6",
+                "shape": "box",
+                "size": [
+                  2.25,
+                  1.65,
+                  2.22
+                ],
+                "position": [
+                  -1,
+                  0,
+                  -15
+                ],
+                "color": "#06D6A0"
+              },
+              {
+                "name": "Business Sub-6-4",
+                "description": "Model in Business Sub-6",
+                "shape": "box",
+                "size": [
+                  2.19,
+                  2.39,
+                  1.97
+                ],
+                "position": [
+                  -15,
+                  0,
+                  -8
+                ],
+                "color": "#EF476F"
+              },
+              {
+                "name": "Business Sub-6-5",
+                "description": "Model in Business Sub-6",
+                "shape": "box",
+                "size": [
+                  2.21,
+                  2.34,
+                  1.75
+                ],
+                "position": [
+                  -8,
+                  0,
+                  -8
+                ],
+                "color": "#118AB2"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Business-7",
+          "description": "Model in Business",
+          "shape": "box",
+          "size": [
+            1.73,
+            1.61,
+            2.17
+          ],
+          "position": [
+            -6,
+            0,
+            -13
+          ],
+          "color": "#FF006E",
+          "subsection": {
+            "name": "Business Sub-7",
+            "description": "Subsection 7 of Business",
+            "icon": "/icons/gear.png",
+            "models": [
+              {
+                "name": "Business Sub-7-1",
+                "description": "Model in Business Sub-7",
+                "shape": "box",
+                "size": [
+                  1.87,
+                  2.14,
+                  1.69
+                ],
+                "position": [
+                  -15,
+                  0,
+                  -15
+                ],
+                "color": "#FF006E"
+              },
+              {
+                "name": "Business Sub-7-2",
+                "description": "Model in Business Sub-7",
+                "shape": "box",
+                "size": [
+                  1.98,
+                  1.54,
+                  2.11
+                ],
+                "position": [
+                  -8,
+                  0,
+                  -15
+                ],
+                "color": "#FFD166"
+              },
+              {
+                "name": "Business Sub-7-3",
+                "description": "Model in Business Sub-7",
+                "shape": "box",
+                "size": [
+                  1.76,
+                  1.5,
+                  2.1
+                ],
+                "position": [
+                  -1,
+                  0,
+                  -15
+                ],
+                "color": "#06D6A0"
+              },
+              {
+                "name": "Business Sub-7-4",
+                "description": "Model in Business Sub-7",
+                "shape": "box",
+                "size": [
+                  2.48,
+                  2.42,
+                  2.5
+                ],
+                "position": [
+                  -15,
+                  0,
+                  -8
+                ],
+                "color": "#EF476F"
+              },
+              {
+                "name": "Business Sub-7-5",
+                "description": "Model in Business Sub-7",
+                "shape": "box",
+                "size": [
+                  2.37,
+                  1.54,
+                  2.34
+                ],
+                "position": [
+                  -8,
+                  0,
+                  -8
+                ],
+                "color": "#118AB2"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Business-8",
+          "description": "Model in Business",
+          "shape": "box",
+          "size": [
+            1.74,
+            2.26,
+            2.37
+          ],
+          "position": [
+            1,
+            0,
+            -13
+          ],
+          "color": "#3A86FF",
+          "subsection": {
+            "name": "Business Sub-8",
+            "description": "Subsection 8 of Business",
+            "icon": "/icons/gear.png",
+            "models": [
+              {
+                "name": "Business Sub-8-1",
+                "description": "Model in Business Sub-8",
+                "shape": "box",
+                "size": [
+                  2.47,
+                  1.87,
+                  2.41
+                ],
+                "position": [
+                  -15,
+                  0,
+                  -15
+                ],
+                "color": "#3A86FF"
+              },
+              {
+                "name": "Business Sub-8-2",
+                "description": "Model in Business Sub-8",
+                "shape": "box",
+                "size": [
+                  1.8,
+                  2.08,
+                  2.01
+                ],
+                "position": [
+                  -8,
+                  0,
+                  -15
+                ],
+                "color": "#FFD166"
+              },
+              {
+                "name": "Business Sub-8-3",
+                "description": "Model in Business Sub-8",
+                "shape": "box",
+                "size": [
+                  1.79,
+                  1.58,
+                  2.24
+                ],
+                "position": [
+                  -1,
+                  0,
+                  -15
+                ],
+                "color": "#06D6A0"
+              },
+              {
+                "name": "Business Sub-8-4",
+                "description": "Model in Business Sub-8",
+                "shape": "box",
+                "size": [
+                  2.08,
+                  1.72,
+                  2.08
+                ],
+                "position": [
+                  -15,
+                  0,
+                  -8
+                ],
+                "color": "#EF476F"
+              },
+              {
+                "name": "Business Sub-8-5",
+                "description": "Model in Business Sub-8",
+                "shape": "box",
+                "size": [
+                  1.65,
+                  1.78,
+                  2.02
+                ],
+                "position": [
+                  -8,
+                  0,
+                  -8
+                ],
+                "color": "#118AB2"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Business-9",
+          "description": "Model in Business",
+          "shape": "box",
+          "size": [
+            1.54,
+            1.56,
+            1.76
+          ],
+          "position": [
+            -20,
+            0,
+            -6
+          ],
+          "color": "#FB5607",
+          "subsection": {
+            "name": "Business Sub-9",
+            "description": "Subsection 9 of Business",
+            "icon": "/icons/gear.png",
+            "models": [
+              {
+                "name": "Business Sub-9-1",
+                "description": "Model in Business Sub-9",
+                "shape": "box",
+                "size": [
+                  1.68,
+                  2.16,
+                  1.59
+                ],
+                "position": [
+                  -15,
+                  0,
+                  -15
+                ],
+                "color": "#FB5607"
+              },
+              {
+                "name": "Business Sub-9-2",
+                "description": "Model in Business Sub-9",
+                "shape": "box",
+                "size": [
+                  2.25,
+                  2.26,
+                  1.74
+                ],
+                "position": [
+                  -8,
+                  0,
+                  -15
+                ],
+                "color": "#FFD166"
+              },
+              {
+                "name": "Business Sub-9-3",
+                "description": "Model in Business Sub-9",
+                "shape": "box",
+                "size": [
+                  2.31,
+                  1.66,
+                  1.69
+                ],
+                "position": [
+                  -1,
+                  0,
+                  -15
+                ],
+                "color": "#06D6A0"
+              },
+              {
+                "name": "Business Sub-9-4",
+                "description": "Model in Business Sub-9",
+                "shape": "box",
+                "size": [
+                  1.91,
+                  2.49,
+                  2.31
+                ],
+                "position": [
+                  -15,
+                  0,
+                  -8
+                ],
+                "color": "#EF476F"
+              },
+              {
+                "name": "Business Sub-9-5",
+                "description": "Model in Business Sub-9",
+                "shape": "box",
+                "size": [
+                  1.6,
+                  2.2,
+                  2.38
+                ],
+                "position": [
+                  -8,
+                  0,
+                  -8
+                ],
+                "color": "#118AB2"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Business-10",
+          "description": "Model in Business",
+          "shape": "box",
+          "size": [
+            2.37,
+            1.75,
+            2.48
+          ],
+          "position": [
+            -13,
+            0,
+            -6
+          ],
+          "color": "#FFBE0B",
+          "subsection": {
+            "name": "Business Sub-10",
+            "description": "Subsection 10 of Business",
+            "icon": "/icons/gear.png",
+            "models": [
+              {
+                "name": "Business Sub-10-1",
+                "description": "Model in Business Sub-10",
+                "shape": "box",
+                "size": [
+                  1.64,
+                  1.88,
+                  1.72
+                ],
+                "position": [
+                  -15,
+                  0,
+                  -15
+                ],
+                "color": "#FFBE0B"
+              },
+              {
+                "name": "Business Sub-10-2",
+                "description": "Model in Business Sub-10",
+                "shape": "box",
+                "size": [
+                  1.94,
+                  1.91,
+                  2.11
+                ],
+                "position": [
+                  -8,
+                  0,
+                  -15
+                ],
+                "color": "#FFD166"
+              },
+              {
+                "name": "Business Sub-10-3",
+                "description": "Model in Business Sub-10",
+                "shape": "box",
+                "size": [
+                  2.26,
+                  1.71,
+                  1.88
+                ],
+                "position": [
+                  -1,
+                  0,
+                  -15
+                ],
+                "color": "#06D6A0"
+              },
+              {
+                "name": "Business Sub-10-4",
+                "description": "Model in Business Sub-10",
+                "shape": "box",
+                "size": [
+                  1.62,
+                  2.4,
+                  1.97
+                ],
+                "position": [
+                  -15,
+                  0,
+                  -8
+                ],
+                "color": "#EF476F"
+              },
+              {
+                "name": "Business Sub-10-5",
+                "description": "Model in Business Sub-10",
+                "shape": "box",
+                "size": [
+                  1.77,
+                  1.96,
+                  1.77
+                ],
+                "position": [
+                  -8,
+                  0,
+                  -8
+                ],
+                "color": "#118AB2"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Haseeb Section",
+      "description": "This is haseebs section.",
+      "icon": "/icons/gear.png",
+      "models": [
+        {
+          "name": "Haseeb model 1",
+          "description": "Description here...",
+          "shape": "box",
+          "size": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "color": "#ff0000",
+          "subsection": {
+            "name": "Sub section 1",
+            "description": "Haseeb sub section 1",
+            "icon": "/icons/gear.png",
+            "models": [
+              {
+                "name": "Sub Section Model",
+                "description": "Description here...",
+                "shape": "box",
+                "size": [
+                  1,
+                  1,
+                  1
+                ],
+                "position": [
+                  0,
+                  0,
+                  0
+                ],
+                "color": "#ff0000"
+              }
+            ]
+          }
+        },
+        {
+          "name": "New Model",
+          "description": "Description here...",
+          "shape": "box",
+          "size": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            4,
+            0,
+            4
+          ],
+          "color": "#1d8724"
+        }
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "label": "conection 1",
+      "from": "Haseeb model 1",
+      "to": "New Model",
+      "offset": 1
+    }
+  ]
 }
